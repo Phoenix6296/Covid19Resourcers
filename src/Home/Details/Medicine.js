@@ -15,32 +15,7 @@ function Details() {
         <Row
           shop="4rth Medicals"
           address="Thana Road"
-          date="24th April, 2021"
-        />
-        <Row
-          shop="4rth Medicals"
-          address="Thana Road"
-          date="24th April, 2021"
-        />
-        <Row
-          shop="4rth Medicals"
-          address="Thana Road"
-          date="24th April, 2021"
-        />
-        <Row
-          shop="4rth Medicals"
-          address="Thana Road"
-          date="24th April, 2021"
-        />
-        <Row
-          shop="4rth Medicals"
-          address="Thana Road"
-          date="24th April, 2021"
-        />
-        <Row
-          shop="4rth Medicals"
-          address="Thana Road"
-          date="24th April, 2021"
+          number="24th April, 2021"
         />
       </div>
     </div>
