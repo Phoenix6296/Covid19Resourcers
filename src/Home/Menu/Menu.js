@@ -5,9 +5,10 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Oxygen from "../Details/Oxygen";
 import Ambulance from "../Details/Ambulance";
 import Plasma from "../Details/Plasma";
-import Medicine from "../Details/Medicine";
+// import Medicine from "../Details/Medicine";
 import CovidTestCenter from "../Details/CovidTestCenter";
 import HomeTreatment from "../Details/HomeTreatment";
+import Vaccine from "../Details/Vaccine";
 
 function Menu() {
   return (
@@ -45,13 +46,13 @@ function Menu() {
               description="There is insufficient data to recommend either for or against the use of plasma treatment."
             />
           </Link>
-          <Link to="/medicine">
+          {/* <Link to="/medicine">
             <MenuRow
               imgsrc={require("./MenuRow/Images/medicine.jpeg").default}
               title="MEDICINE"
               description="Drugs aren't permanent solution to COVID-19, it is to be administered by medical professionals."
             />
-          </Link>
+          </Link> */}
           <Link to="/covidtestcenter">
             <MenuRow
               imgsrc={require("./MenuRow/Images/covidtestcenter.jpeg").default}
@@ -64,6 +65,13 @@ function Menu() {
               imgsrc={require("./MenuRow/Images/hometreatment.jpeg").default}
               title="HOME TREATMENT"
               description="Covid 19 Home Treatment Step by Step."
+            />
+          </Link>
+          <Link to="/vaccine">
+            <MenuRow
+              imgsrc={require("./MenuRow/Images/vaccine.jpeg").default}
+              title="VACCINE CENTERS"
+              description="Vaccine is a prevention not the cure.."
             />
           </Link>
         </div>
@@ -79,9 +87,10 @@ function Menu() {
       <Route path="/" exact component={Oxygen} />
       <Route path="/ambulance" exact component={Ambulance} />
       <Route path="/plasma" exact component={Plasma} />
-      <Route path="/medicine" exact component={Medicine} />
+      {/* <Route path="/medicine" exact component={Medicine} /> */}
       <Route path="/covidtestcenter" exact component={CovidTestCenter} />
       <Route path="/hometreatment" exact component={HomeTreatment} />
+      <Route path="/vaccine" exact component={Vaccine} />
     </Router>
   );
 }
