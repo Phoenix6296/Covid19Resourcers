@@ -1,4 +1,4 @@
-##To get started with
+#To get started with
 run `npm install` to install all the dependencies
 run `npm start` to start the localhost.
 
