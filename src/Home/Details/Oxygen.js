@@ -1,64 +1,8 @@
 import React from "react";
 import "./Details.css";
 import Row from "./DetailRow/DetailRow";
+import OxygenData from "../../Data/OxygenData.json"
 
-const data = [
-  {
-    "shop": "Maa Vaishnavi Acetylene Gas Pvt. Ltd.",
-    "address": "Khatgari Ananda Gopal Mukherjee Sarani Road, Durgapur",
-    "number": "8145262626"
-  },
-  {
-    "shop": "Joy Bajrang Enterprise",
-    "address": "Suravi Cinema Hall More, (Beside NH-2), Andal Airport Main Gate, Andal",
-    "number": "8045805115"
-  },
-  {
-    "shop": "PharmaCo",
-    "address": "Ambagan,Gopinathpur Behind Canara Bank, opposite Dairy More, Durgapur",
-    "number": "NA"
-  },
-  {
-    "shop": "Praxair",
-    "address": "Praxair Oxygen Plant, Main Gate, Durgapur",
-    "number": "NA"
-  },
-  {
-    "shop": "Bablu Gas Supply",
-    "address": "Palashdiha, Industrial Area, Durgapur",
-    "number": "NA"
-  },
-  {
-    "shop": "Desai Healthcare",
-    "address": "122, GT Rd, Opposite Axis Bank Murgasol branch, Murgasol, Asansol",
-    "number": "9732004000"
-  },
-  {
-    "shop": "Agarwal Traders",
-    "address": "28 GT Road Ushagram, Asansol",
-    "number": "9434577037"
-  },
-  {
-    "shop": "SuperGas Franchisee - N B Gas Agency",
-    "address": "Bagan Dhowra P.O. Taltore, Taluka Near Hot Bricks Amuria Asansol",
-    "number": "7001174164"
-  },
-  {
-    "shop": "Sanjeevani Health Care",
-    "address": "Near MRF Tyre Showroom, Kalyanpur Housing, Shristinagar, Asansol",
-    "number": "NA"
-  },
-  {
-    "shop": "Bengal Oxygen and Company",
-    "address": "Jharkhand Road, Rupnarayanpur, Rupnarayanpur, Asansol",
-    "number": "NA"
-  },
-  {
-    "shop": "Oxygen Hub Health Care",
-    "address": "Hutton Rd, near Kalibari Bazar, Master Para, Pathak Bari, Asansol,",
-    "number": "NA"
-  }
-];
 function Details() {
   return (
     <div className="details">
@@ -70,7 +14,7 @@ function Details() {
       </div>
       <div className="details-body">
 
-        {data.map((item, index) => {
+        {OxygenData.map((item, index) => {
           return <Row key={index} shop={item.shop}
             address={item.address}
             number={item.number}
