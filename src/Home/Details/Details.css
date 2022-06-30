@@ -5,6 +5,7 @@
   padding-bottom: 20px;
   background-color: #f6f6f6;
 }
+
 .header {
   z-index: 1;
   background-color: white;
@@ -16,18 +17,22 @@
   width: 95.5%;
   padding: 20px;
 }
+
 #input {
   padding: 5px;
   border-radius: 5px;
   outline: none;
   border: none;
 }
-form > input {
+
+form>input {
   background-color: #f1f1f1;
 }
+
 .details-body {
   padding: 20px;
 }
+
 .no-data {
   display: flex;
   align-items: center;
@@ -37,13 +42,16 @@ form > input {
   text-align: center;
   filter: drop-shadow(0 0 0.2rem crimson);
 }
+
 #disclaimer {
   filter: drop-shadow(0 0 0.2rem crimson);
 }
+
 .blocks {
   display: flex;
 }
-.blocks > div {
+
+.blocks>div {
   flex: 0.5;
   display: flex;
   align-items: center;
@@ -51,23 +59,34 @@ form > input {
   padding: 20px;
   text-align: justify;
 }
-.blocks > div > img {
+
+.blocks>div>img {
   height: 200px;
   width: 100%;
 }
+
 .span {
   color: red;
 }
+
 .self {
   margin: 10px;
 }
+
+.precautions {
+  color: red !important;
+  margin-bottom: 1rem;
+}
+
 @media only screen and (max-width: 1000px) {
   .header {
     width: 90%;
   }
+
   .no-data {
     font-size: 1rem;
   }
+
   .blocks {
     flex-direction: column;
   }
